@@ -67,12 +67,43 @@ if (10 === 10 || (5 < 4 && 10 === 5)) {
 
 // }
 
-const p = prompt("enter something");
+// const p = prompt("enter something");
 
 // const ckeck = typeof p;
 
-if (p - 10) {
-  console.log(p - 10);
-} else {
-  console.log("super");
-}
+// if (p - 10) {
+//   console.log(p - 10);
+// } else {
+//   console.log("super");
+// }
+
+// 12-12
+// let fruts = 10;
+
+// console.log(fruts, fruts);
+
+// ARRAY
+// const arr = [10, 20];
+
+// const another = arr;
+
+// // .slice .splice .pop .push shift unshift sort
+// arr[0] = 50;
+// another[1] = 0;
+
+// console.log(arr);
+
+// LOOPS
+
+// aray -> [odd , even],[1,2,3] -> ["odd", even]
+// let fruit;
+
+// for (let i = 8; i < 10; i++) {
+//   console.log("inside loop" + i);
+// }
+
+// for (let i = 0; i < 10; i++) {
+//   console.log("inside loop" + i);
+// }
+
+console.log(11);
