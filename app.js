@@ -106,4 +106,106 @@ if (10 === 10 || (5 < 4 && 10 === 5)) {
 //   console.log("inside loop" + i);
 // }
 
-console.log(11);
+// let i = 0;
+
+// while (i < 10) {
+//   console.log(i, "11");
+//   i++;
+// }
+
+// let pass = prompt("enter pass");
+
+// while (pass !== "qwerty") {
+//   pass = prompt("enter pass");
+// }
+
+// for (let i = 0; i < 2; i++) {
+//   if (pass === "qwerty") {
+//     console.log("correct");
+//   }
+//   pass = prompt("enter pass");
+// }
+
+// large number
+
+// const arrv2 = [20, 24, 781, 56];
+
+// let largest = arrv2[0]; //781
+
+// for (let i = 1; i < arrv2.length; i++) {
+//   if (arrv2[i] > largest) {
+//     largest = arrv2[i];
+//   }
+// }
+
+// console.log(largest);
+
+// // objects
+// const obj = { fruit: "apple", isHealthy: true, quty: "10kg" };
+
+// for (let i in obj) {
+//   console.log(i);
+// }
+
+// const practice = [];
+// console.log(obj);
+
+const cars = [
+  { fruit: "apple", isHealthy: true, quty: "20kg" },
+  { fruit: "grape", isHealthy: true, quty: "10kg" },
+  { fruit: "orange", isHealthy: true, quty: "80kg" },
+];
+
+// for (let i = 0; i < cars.length; i++) {
+//   console.log(cars[i].quty);
+// }
+
+//object-->
+const obj = { name: "raghu", isGood: true, name: "yyyyy" }; //
+// obj.test = 100;
+// obj.name = 100;
+
+// console.log(obj);
+//acccess
+// // 100 "raghu" , Error ,true ,false ,null
+
+//
+
+// [10,10,2,1,3]
+
+//function
+const practice = add(10, 10);
+//defineing the function
+
+// calling the function
+
+console.log(practice);
+
+// arrow function
+
+// const addv2 = (a, b, c) => a + b + c;
+// const newVar = addv2(1, 1, 1);
+
+function add(a, b) {
+  return a + b;
+}
+
+//----------------------------------------
+
+const sqroot = (one, w, e) => {
+  const t = one(w, e);
+  return t ** 2;
+};
+
+console.log(sqroot(add, 1, 1));
+//-----------------------------------------
+
+// const free = () => console.log("fine");
+
+const arr = [1, 2, 3, 4, 5];
+
+const newArr = arr.map((i) => "pp" + i);
+
+console.log(newArr, arr);
+
+//filter,reduce,shallowcopy deepcopy,  call back hell -> promise
