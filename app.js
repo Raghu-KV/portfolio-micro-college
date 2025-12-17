@@ -286,3 +286,22 @@
 // }
 
 // APICall();
+
+// dom manuplation
+
+const btn = document.querySelector("#btn");
+console.log(btn);
+
+btn.addEventListener("click", () => {
+  const nameTitle = document.querySelector("#name");
+
+  console.log(nameTitle.innerText, "pp");
+
+  if (nameTitle.innerText === "Raghu Nandan") {
+    nameTitle.innerText = "60900";
+  } else {
+    nameTitle.innerText = "Raghu Nandan";
+  }
+
+  nameTitle.classList.toggle("red");
+});

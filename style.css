@@ -16,6 +16,10 @@
     color: rgb(139, 139, 139);
 }
 
+.red{
+    color: rgb(255, 102, 37);
+}
+
 .nav-container{
     display: flex;
    justify-content: space-between;
