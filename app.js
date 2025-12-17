@@ -209,3 +209,9 @@ const newArr = arr.map((i) => "pp" + i);
 console.log(newArr, arr);
 
 //filter,reduce,shallowcopy deepcopy,  call back hell -> promise
+
+const func = () => {
+  return 10;
+};
+
+console.log(func());
