@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+      .login-box {
+        background: #fff;
+        padding: 25px;
+        width: 320px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .login-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .login-box input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .login-box button {
+        width: 100%;
+        padding: 10px;
+        background: #2563eb;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .login-box button:hover {
+        background: #1e40af;
+      }
+
+      #emailErrorMsg,
+      #passErrorMsg {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        color: rgb(245, 76, 14);
+      }
+
+      .display-none {
+        display: none;
+      }
+      .display-block {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Email" id="emailForm" />
+        <p id="emailErrorMsg" class="display-none">Email required</p>
+        <input type="password" placeholder="Password" id="passForm" />
+        <p id="passErrorMsg" class="display-none">Password required</p>
+        <button type="submit" id="singUpBtn">Sign In</button>
+      </form>
+    </div>
+    <script src="./js/signUp.js"></script>
+  </body>
+</html>

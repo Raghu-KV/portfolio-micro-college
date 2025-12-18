@@ -289,19 +289,36 @@
 
 // dom manuplation
 
-const btn = document.querySelector("#btn");
-console.log(btn);
+// const btn = document.querySelector("#btn");
+// console.log(btn);
 
-btn.addEventListener("click", () => {
-  const nameTitle = document.querySelector("#name");
+// btn.addEventListener("click", () => {
+//   const nameTitle = document.querySelector("#name");
 
-  console.log(nameTitle.innerText, "pp");
+//   console.log(nameTitle.innerText, "pp");
 
-  if (nameTitle.innerText === "Raghu Nandan") {
-    nameTitle.innerText = "60900";
-  } else {
-    nameTitle.innerText = "Raghu Nandan";
-  }
+//   if (nameTitle.innerText === "Raghu Nandan") {
+//     nameTitle.innerText = "60900";
+//   } else {
+//     nameTitle.innerText = "Raghu Nandan";
+//   }
 
-  nameTitle.classList.toggle("red");
+//   nameTitle.classList.toggle("red");
+// });
+
+const email = localStorage.getItem("email");
+const pass = localStorage.getItem("password");
+
+console.log(email, pass);
+
+if (!(email === "raghu@gmail.com" && pass === "12345678")) {
+  localStorage.clear();
+  window.location.href = "./login.html";
+}
+
+const logout = document.querySelector("#logout");
+
+logout.addEventListener("click", () => {
+  localStorage.clear();
+  window.location.href = "./login.html";
 });
